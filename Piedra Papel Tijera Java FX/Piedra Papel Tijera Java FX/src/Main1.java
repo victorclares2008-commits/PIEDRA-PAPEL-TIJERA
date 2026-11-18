@@ -1,12 +1,9 @@
-
 import java.util.Scanner;
-
 public class Main1 {
     public static void main(String[] args) {
         private void jugar(String opcionJugador) {
             int num = random.nextInt(3); // opción aleatoria de la CPU
             String cpu;
-
 
             if (num == 0) {
                 cpu = "Piedra";
@@ -15,12 +12,7 @@ public class Main1 {
             } else {
                 cpu = "Tijera";
             }
-
-
             String resultado;
-
-
-
             if (opcionJugador.equals(cpu)) {
                 resultado = "Empate";
             } else if (opcionJugador.equals("Piedra") && cpu.equals("Tijera")) {
@@ -32,17 +24,11 @@ public class Main1 {
             } else {
                 resultado = "Perdiste";
             }
-
-
             lblResultado.setText("Tú: " + opcionJugador + " | CPU: " + cpu + " → " + resultado);
         }
-
-
         public static void main(String[] args) {
             launch();
         }
     }
-
-
 }
 }
